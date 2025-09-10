@@ -4,61 +4,100 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>EX2</title>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="baiano.css">
 </head>
 <body>
 
-  <h3>EX2 Formulário</h3>
+  <div class="container">
+    <h3>EX2 - Formulário</h3>
 
- <fieldset>
-    <legend>Identificação do Usuário</legend>
-    <p>
-      Nome: <input type="text" placeholder="Nome completo"><br><br>
-      Senha: <input type="password" placeholder="Digite a senha"><br><br>
-      E-mail: <input type="email" placeholder="Digite seu e-mail"><br><br>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Identificação do Usuário</legend>
+        <label>Nome:
+          <input type="text" placeholder="Nome completo" required>
+        </label><br><br>
 
-    <fieldset>
-      <legend>Sexo</legend>
-      <input type="radio" name="sexo" value="M"> Masculino <br> <input type="radio" name="sexo" value="F"> Feminino<br><br>
-    </fieldset><br>
+        <label>Senha:
+          <input type="password" placeholder="Digite a senha" required>
+        </label><br><br>
 
-      Data de Nascimento: <input type="date">
-    </p>
-    </fieldset>
+        <label>E-mail:
+          <input type="email" placeholder="Digite seu e-mail" required>
+        </label><br><br>
 
-    <fieldset>
+        <fieldset>
+          <legend>Sexo</legend>
+          <label><input type="radio" name="sexo" value="M"> Masculino</label><br>
+          <label><input type="radio" name="sexo" value="F"> Feminino</label>
+        </fieldset><br>
+
+        <label>Data de Nascimento:
+          <input type="date" required>
+        </label>
+      </fieldset>
+
+      <fieldset>
         <legend>Endereço</legend>
-    <p>
-      Logradouro:<input type="text" placeholder="Rua, Av, Bairro"><br><br>
-      Número:<input type="text"><br><br>
-      Estado:<select name="estado" id="estado_id">
-        <option selected="">Brasília</option>
-        <option>Rio de Janeiro</option>
-        <option>São Paulo</option>
-        <option>Minas Gerais</option>
-        <option>Outros</option>
-      </select><br><br>
-      Cidade: <input type="text" placeholder="Sua cidade">
-    </p>
-    </fieldset>
 
-    <fieldset>
+        <label>Logradouro:
+          <input type="text" placeholder="Rua, Av, Bairro" required>
+        </label><br><br>
+
+        <label>Número:
+          <input type="text" required>
+        </label><br><br>
+
+        <label>Estado:
+          <select name="estado" id="estado_id">
+            <option selected disabled>Selecione</option>
+            <option>Brasília</option>
+            <option>Rio de Janeiro</option>
+            <option>São Paulo</option>
+            <option>Minas Gerais</option>
+            <option>Outros</option>
+          </select>
+        </label><br><br>
+
+        <label>Cidade:
+          <input type="text" placeholder="Sua cidade" required>
+        </label>
+      </fieldset>
+
+      <fieldset>
         <legend>Mensagem do Usuário</legend>
-    <p>
-      Grau de urgência: Min <input type="range" min="0" max="10"> Max <br><br>  
-      Mensagem: <textarea name="mensagem" rows="4" cols="40" placeholder=""></textarea><br><br>
-    </fieldset>
 
-<fieldset>
-    <legend>Quero um produto</legend>
-    <p> 
-      <input type="checkbox"> Gostaria de adquirir um produto quando disponível.<br><br>
-      Cor: <input type="color" value="#0000ff"><br><br>  
-      Quantidade: <input type="number" min="1"><br><br> 
-      Preço Total R$: <input type="text"><br><br>
-    </p> 
-</fieldset>
- <input type="submit" name="Enviar" id="enviar_id" value="Enviar">
-    
+        <label>Grau de urgência:</label><br>
+        Min <input type="range" min="0" max="10"> Max <br><br>
+
+        <label>Mensagem:
+          <textarea name="mensagem" rows="4" cols="40" placeholder="Digite sua mensagem aqui..."></textarea>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Quero um produto</legend>
+
+        <label>
+          <input type="checkbox"> Gostaria de adquirir um produto quando disponível.
+        </label><br><br>
+
+        <label>Cor:
+          <input type="color" value="#0000ff">
+        </label><br><br>
+
+        <label>Quantidade:
+          <input type="number" min="1">
+        </label><br><br>
+
+        <label>Preço Total R$:
+          <input type="text">
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Enviar" id="enviar_id">
+    </form>
+  </div>
+
 </body>
 </html>
