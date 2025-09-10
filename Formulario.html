@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EX2</title>
+  <link rel="stylesheet" href="">
+</head>
+<body>
+
+  <h3>EX2 Formulário</h3>
+
+ <fieldset>
+    <legend>Identificação do Usuário</legend>
+    <p>
+      Nome: <input type="text" placeholder="Nome completo"><br><br>
+      Senha: <input type="password" placeholder="Digite a senha"><br><br>
+      E-mail: <input type="email" placeholder="Digite seu e-mail"><br><br>
+
+    <fieldset>
+      <legend>Sexo</legend>
+      <input type="radio" name="sexo" value="M"> Masculino <br> <input type="radio" name="sexo" value="F"> Feminino<br><br>
+    </fieldset><br>
+
+      Data de Nascimento: <input type="date">
+    </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço</legend>
+    <p>
+      Logradouro:<input type="text" placeholder="Rua, Av, Bairro"><br><br>
+      Número:<input type="text"><br><br>
+      Estado:<select name="estado" id="estado_id">
+        <option selected="">Brasília</option>
+        <option>Rio de Janeiro</option>
+        <option>São Paulo</option>
+        <option>Minas Gerais</option>
+        <option>Outros</option>
+      </select><br><br>
+      Cidade: <input type="text" placeholder="Sua cidade">
+    </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Mensagem do Usuário</legend>
+    <p>
+      Grau de urgência: Min <input type="range" min="0" max="10"> Max <br><br>  
+      Mensagem: <textarea name="mensagem" rows="4" cols="40" placeholder=""></textarea><br><br>
+    </fieldset>
+
+<fieldset>
+    <legend>Quero um produto</legend>
+    <p> 
+      <input type="checkbox"> Gostaria de adquirir um produto quando disponível.<br><br>
+      Cor: <input type="color" value="#0000ff"><br><br>  
+      Quantidade: <input type="number" min="1"><br><br> 
+      Preço Total R$: <input type="text"><br><br>
+    </p> 
+</fieldset>
+ <input type="submit" name="Enviar" id="enviar_id" value="Enviar">
+    
+</body>
+</html>
