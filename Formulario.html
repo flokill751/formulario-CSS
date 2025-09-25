@@ -1,108 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>RONALDBAIANO</title>
   <link rel="stylesheet" href="baiano.css">
 </head>
+
 <body>
 
 
-  <div class="gifimg">
-    <img src="img/valdei-ezgif.com-webp-to-gif-converter.webp" alt="gif ronaldobaiano">
-  </div>
+  <div class="container-principal">
+    
 
-  <div class="container">
-    <h3>Formulário</h3>
-    <form action="#" method="post">
-      <fieldset>
-        <legend>Identificação do Usuário</legend>
-        <label>Nome:
-          <input type="text" placeholder="Nome completo" required>
-        </label>
+    <div class="gif-esquerdo">
+      <img src="img/valdei-ezgif.com-webp-to-gif-converter.webp" alt="gif ronaldobaiano">
+    </div>
 
-        <label>Senha:
-          <input type="password" placeholder="Digite a senha" required>
-        </label>
 
-        <label>E-mail:
-          <input type="email" placeholder="Digite seu e-mail" required>
-        </label>
+    <div class="container">
 
-        <legend id="sexin">Sexo</legend>
-        <fieldset id="sexogostoso"><br>
-          <label style="padding-left: 10px;"><input type="radio" name="sexo" value="M"> Masculino</label>
-          <label style="padding-left: 10px;"><input type="radio" name="sexo" value="F"> Feminino</label>
+      <h3>Formulário</h3>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Identificação do Usuário</legend>
+          <label>Nome:
+            <input type="text" placeholder="Nome completo" required>
+          </label>
 
+          <label>Senha:
+            <input type="password" placeholder="Digite a senha" required>
+          </label>
+
+          <label>E-mail:
+            <input type="email" placeholder="Digite seu e-mail" required>
+          </label>
+
+          <legend id="sexin">Sexo</legend>
+          <fieldset id="sexogostoso"><br>
+            <label style="padding-left: 10px;"><input type="radio" name="sexo" value="M"> Masculino</label>
+            <label style="padding-left: 10px;"><input type="radio" name="sexo" value="F"> Feminino</label>
+
+          </fieldset>
+
+          <label>Data de Nascimento:
+            <input type="date" required>
+          </label>
         </fieldset>
 
-        <label>Data de Nascimento:
-          <input type="date" required>
-        </label>
-      </fieldset>
+        <fieldset>
+          <legend>Endereço</legend>
 
-      <fieldset>
-      <legend>Endereço</legend>
+          <label>Logradouro:
+            <input type="text" placeholder="Rua, Av, Bairro" required>
+          </label>
 
-        <label>Logradouro:
-          <input type="text" placeholder="Rua, Av, Bairro" required>
-        </label>
+          <label>Número:
+            <input type="text" required>
+          </label>
 
-        <label>Número:
-          <input type="text" required>
-        </label>
+          <label>Estado:
+            <select name="estado" id="estado_id">
+              <option selected disabled>Selecione</option>
+              <option>Brasília</option>
+              <option>Rio de Janeiro</option>
+              <option>São Paulo</option>
+              <option>Minas Gerais</option>
+              <option>Outros</option>
+            </select>
+          </label>
 
-        <label>Estado:
-          <select name="estado" id="estado_id">
-            <option selected disabled>Selecione</option>
-            <option>Brasília</option>
-            <option>Rio de Janeiro</option>
-            <option>São Paulo</option>
-            <option>Minas Gerais</option>
-            <option>Outros</option>
-          </select>
-        </label>
+          <label>Cidade:
+            <input type="text" placeholder="Sua cidade" required>
+          </label>
+        </fieldset>
 
-        <label>Cidade:
-          <input type="text" placeholder="Sua cidade" required>
-        </label>
-      </fieldset>
+        <fieldset>
+          <legend>Mensagem do Usuário</legend>
 
-      <fieldset>
-        <legend>Mensagem do Usuário</legend>
+          <label>Grau de urgência:</label><br>
+          Min <input type="range" min="0" max="10"> Max <br><br>
 
-        <label>Grau de urgência:</label><br>
-        Min <input type="range" min="0" max="10"> Max <br><br>
+          <label>Mensagem:
+            <textarea name="mensagem" rows="4" cols="40" placeholder="Digite sua mensagem aqui..."></textarea>
+          </label>
+        </fieldset>
 
-        <label>Mensagem:
-          <textarea name="mensagem" rows="4" cols="40" placeholder="Digite sua mensagem aqui..."></textarea>
-        </label>
-      </fieldset>
+        <fieldset>
+          <legend>Quero Um Produto</legend>
 
-      <fieldset>
-        <legend>Quero Um Produto</legend>
+          <label>
+            <input type="checkbox"> Gostaria de adquirir um produto quando disponível.
+          </label><br>
 
-        <label>
-          <input type="checkbox"> Gostaria de adquirir um produto quando disponível.
-        </label><br>
+          <label>Cor:
+            <input type="color" value="#0000ff">
+          </label><br>
 
-        <label>Cor:
-          <input type="color" value="#0000ff">
-        </label><br>
+          <label>Quantidade:
+            <input type="number" min="1">
+          </label><br>
 
-        <label>Quantidade:
-          <input type="number" min="1">
-        </label><br>
+          <label>Preço Total R$:
+            <input type="number">
+          </label>
+        </fieldset>
 
-        <label>Preço Total R$:
-          <input type="number">
-        </label>
-      </fieldset>
+        <input type="submit" value="Enviar" id="enviar_id">
+      </form>
+      <div class="container-principal"></div>
 
-      <input type="submit" value="Enviar" id="enviar_id">
-    </form>
+    </div>
+    <div class="gif-direto">
+      <img src="img/valdei-ezgif.com-webp-to-gif-converter.webp" alt="gif ronaldobaiano">
+    </div>
+
   </div>
-
 </body>
+
 </html>
